@@ -1,4 +1,10 @@
 <% if @name_1 && @name_2 %>
 <h1>Welcome <%= @name_1 %> and <%= @name_2 %>, FIGHT!</h1>
 <h2><%= @name_2 %>'s hit points: 100</h2>
+<form action='/attack' method="get">
+  <label for="submit">
+    Attack!
+    <input type="submit" name="Attack!">
+  </label>
+</form>
 <% end %>
