@@ -6,7 +6,7 @@
 # end
 
 feature 'Testing name form' do
-  scenario 'Can display submitted names' do
+  scenario 'Can store and display submitted names' do
     visit('/')
     fill_in 'Player1', with: 'Bob'
     fill_in 'Player2', with: 'Ben'
